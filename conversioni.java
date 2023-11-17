@@ -13,15 +13,7 @@ public class conversioni {
 				//Dichiarazione variabili
 				byte n, scelta, a;
 				int risultato1;
-				String esaA, esaB, esaC, esaD, esaE, esaF;
-				
-				//Assegnazione valori 
-				esaA = "A";
-				esaB = "B";
-				esaC = "C";
-				esaD = "D";
-				esaE = "E";
-				esaF = "F";
+			
 				
 				//Creazione switch e scelta della base di conversione 
 				System.out.println("Inserisci un numero per scegliere la base della conversione.");
