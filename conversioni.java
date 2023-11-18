@@ -7,30 +7,23 @@ import java.util.Arrays;
 public class conversioni {
 
 	public static void main(String[] args) {
-		//Inizializzazione scanner 
+		
 				Scanner src = new Scanner(System.in);
-				
-				//Dichiarazione variabili
-				byte n, scelta, a;
-				int risultato1;
-			
-				
-				//Creazione switch e scelta della base di conversione 
+
 				System.out.println("Inserisci un numero per scegliere la base della conversione.");
 				System.out.println("0 - Base 2 (Binaria)");
 				System.out.println("1 - Base 8 (Ottale)");
 				System.out.println("2 - Base 16 (Esadecimale)");
 				System.out.print("Base: ");
-				scelta = src.nextByte();
+				byte scelta = src.nextByte();
 				switch(scelta) {
 				    
-				    //Binaria
 				    case 0:
 				        System.out.print("Inserisci il numero di valori: ");
-				        n = src.nextByte();
+				        byte n = src.nextByte();
 				        byte[] numeri2 = new byte[20];
-				        a = 0;
-				        risultato1 = 0;
+				        byte a = 0;
+				        int risultato1 = 0;
 				        for (byte j = 0; j < n; j++) {
 				            do {
 				                System.out.print("Inserisci il numero (0 o 1): ");
@@ -48,8 +41,7 @@ public class conversioni {
 				        }
 				        System.out.println("Il numero in base 10 è: " + risultato1);
 				        break;
-				        
-				    //Ottale
+
 				    case 1:
 				    	System.out.print("Inserisci il numero di valori: ");
 				        n = src.nextByte();
@@ -73,8 +65,7 @@ public class conversioni {
 				        }
 				        System.out.println("Il numero in base 10 è: " + risultato1);
 				        break;
-				        
-				    //Esadecimale
+
 				    case 2:
 				    	System.out.print("Inserisci il numero di valori: ");
 				        n = src.nextByte();
@@ -132,12 +123,10 @@ public class conversioni {
 				        System.out.println("Il numero in base 10 è: " + risultato1);
 				        break;
 				        
-				    //Default 
 				    default:
 				    	 System.out.println("Devi inserire uno dei tre numeri elencati in precedenza.");
 				}
 				
-				//Fine del programma
 				System.out.println("Fine del programma.");
 				
 				//Nini
